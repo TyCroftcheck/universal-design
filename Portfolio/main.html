@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project1.css">
+    <style>
+         * {
+        box-sizing: border-box;
+      }
+        .headshot {
+            margin: 5px;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .headshot img {
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+        }
+
+        .about {
+            text-align: left;
+        }
+
+        .imageLinks {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .imageLinks ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+            font-size: large;
+        }
+
+        .imageLinks li:hover {
+            transform: scale(1.05);
+        }
+
+        .imageLinks img {
+            width: 250px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .aboutme {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+      
+
+
+        @media (max-width: 600px) {
+            .imageLinks {
+                flex-direction: column;
+                align-items: center;
+                
+            }
+
+
+            nav ul {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+            .headshot img{
+                width: 140px;
+            }
+
+            .imageLinks img {
+                width: 100%;
+            }
+
+            .aboutme {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ty Croftcheck</h1>
+
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+
+        <div class="aboutme">
+        <div class="headshot">
+            <img src="headshot.PNG" alt="Headshot">
+        </div>
+
+        <div class="about">
+        <p> This website introduces myself as well as some of my interests and skills.<br>
+            I am from Pittsburgh, Pennsylvania, and am currently enrolled in <a href="https://www.colorado.edu/">The Univerity of Colorado Boulder</a><br>
+            for a degree in Creative Technology and Design. I am currently in a Band called Cat Scratch where I play the guitar.
+            Along with music I also practice photography. In this website you can find links to my Music, Photography and Resume.</p>
+        </div>
+        </div>
+
+        <div class="imageLinks">
+            <ul>
+                <li>
+                    <a href="music.html">
+                        <img src="guitar.JPG" alt="Music" width="250">
+                        <p>Music</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="photography.html">
+                        <img src="Elk.jpeg" alt="Photography" width="250">
+                        <p>Photography</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="resume.html">
+                        <img src="remsumeimg.jpg" alt="Resume" width="250">
+                        <p>Resume</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
