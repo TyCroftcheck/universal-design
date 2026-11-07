@@ -6,13 +6,56 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
+    <div class="container">
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+
 <header>
         <h1>Ty Croftcheck</h1>
-        <h2>About Me: I am a 5th year CTD student from Pittsburgh, PA. </h2>
+           <section id="about-me">
+        <h2>About Me</h2>
+        <div class="about-container">
+                        <img src="photos/Self image.png" alt="Self Portrait" width="200">
+
+            <p>My name is Ty Croftcheck and I am a student in the CTD program at the University of Colorado Boulder. This webpage is my portal for my universal design class. In my free time I play guitar in a band called "cat scratch", we are still farely new but weve come a long way. Aside from the band I also enjoy the outdoors such as fishing and hiking.</p>
+            <p>Back home I live on a farm with about 200 head of cattle, and work with my family at our machine shop. finally I am a huge music fan in general, my favorite band is Nirvana and I just recently got to see the smashing pumpkins live.</p>
+        </div>
+    </section>
 </header>
-<main>
-    <h3>Assigments</h3>
+
+<nav class="sr-only">
+    <ul>
+        <li><a href="lab1.html">Lab 1</a></li>
+        <li><a href="lab2.html">Lab 2</a></li>
+        <li><a href="lab3.html">Lab 3</a></li>
+        <li><a href="semantic.html">Semantic Html HW</a></li>
+        <li><a href="semantics-legibility.html">Semantic-legibility</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="lab3.html">Lab 3</a></li>
+        <li><a href="assignment5.html">Assignment 5: Tables, Forms, Tabbed Browsing, and Screen Reading</a></li>
+        <li><a href="responsive.html">Assignment 6: Responsive Design</a></li>
+        <li><a href="semantics-basics.html">Semantic Basics</a></li>
+        <li><a href="semantic-advanced.html">Semantic Advanced</a></li>
+    </ul>
+</nav>
+
+
+<main id="maincontent">
+    <section id="labs">
+    <h2>Labs</h2>
+        <nav>
+            <ul>
+                <li><a href="lab2.html">Lab 2</a></li>
+                <li><a href="lab3.html">Lab 3</a></li>
+                <li><a href="lab4.html">Lab 4</a></li>
+            </ul>
+        </nav>
+    </section>
+    
+    <section id="assignments">
+        <h2>Assignments</h2>
         <nav>
             <ul>
                 <li><a href="semantic.html">Semantic Html HW</a></li>
@@ -24,13 +67,23 @@
                 <li><a href="responsive.html">Assignment 6: Responsive Design</a></li>
             </ul>
         </nav>
-    <h3>Other</h3>
+    </section>
+
+    <section id="other">
+        <h2>Other</h2>
         <nav>
             <ul>
                 <li><a href="semantics-basics.html">Semantic Basics</a></li>
                 <li><a href="semantic-advanced.html">Semantic Advanced</a></li>
             </ul>
         </nav>
+    </section>
+
 </main>
+    <footer>
+        <p>Ty Croftcheck: ATLS-CSCI 3150 Class Portal. 2026</p>
+    </footer>
+
+    </div>
 </body>
 </html>

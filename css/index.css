@@ -1,7 +1,174 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Garamond, serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background: white;
+    color: black;
     padding: 10px;
-    background-color: white;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "heady"
+        "navvy"
+        "mainy"
+        "footy";
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.about-container img {
+    width: 200px;
+    height: auto;
+}
+
+header {
+    grid-area: heady;
+    background: darkgreen;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    grid-area: navvy;
+    background: darkgreen;
+    color: white;
+    padding: 15px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+main {
+    grid-area: mainy;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main nav {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+main ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+footer {
+    grid-area: footy;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
 }
