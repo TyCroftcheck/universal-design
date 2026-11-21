@@ -30,21 +30,37 @@ body {
 
 .about-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 25px;
+    text-align: center;
+    max-width: 500px;
 }
 
 .about-container img {
     width: 200px;
+    max-width: 100%;
     height: auto;
+}
+
+.about-container p {
+    text-align: left;
+    width: 100%;
 }
 
 header {
     grid-area: heady;
     background: darkgreen;
     color: white;
-    padding: 25px;
+    padding: 15px;
     text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 h1 {
@@ -59,18 +75,16 @@ h2 {
 nav {
     grid-area: navvy;
     background: darkgreen;
-    color: white;
     padding: 15px;
     width: 100%;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     list-style: none;
-    margin-top: 10px;
 }
 
 nav a {
@@ -93,6 +107,11 @@ main nav {
 
 section {
     margin-bottom: 20px;
+    padding: 15px;
+}
+
+section h2 {
+    margin-bottom: 10px;
 }
 
 p {
@@ -153,11 +172,23 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
         gap: 10px;
+        justify-content: space-around;
+    }
+
+    .about-container {
+        flex-direction: row;
+        text-align: left;
+        max-width: 800px;
+        gap: 20px;
+    }
+    
+    .about-container img {
+        width: 250px;
     }
 
     header {
